@@ -1,21 +1,28 @@
-# create-cline-app
+# create-cline-fork
 
-このプロジェクトは、cline フォークを作成するコマンドラインツールです。
+このプロジェクトは、CLINE フォークを作成するコマンドラインツールです。
+
+This project is a command line tool to create a CLINE fork.
 
 ```bash
-bun create cline hoge
-# generate ./hoge/hoge.vsix
+$ npm create cline test
+✔ Template repository cloning completed
+Starting file processing...
+All files processed successfully.
+✔ Dependencies installation and packaging completed
+
+🎉  Successfully created! /path/to/test-x.x.x.vsix
+
+$ code --install-extension /path/to/test-x.x.x.vsix
+Installing extensions...
+Extension 'test-x.x.x.vsix' was successfully installed.
 ```
 
 ## Development
 
 ```bash
 bun install
-bun run create mycline
-cd mycline
-bun run install:all
-bun x vsce package
-# generate ./mycline/mycline.vsix
+bun run create test
 ```
 
 ## ライセンス
