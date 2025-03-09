@@ -1,0 +1,2 @@
+use bun instead of npm, node
+look into node_modules d.ts for check library usage

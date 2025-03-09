@@ -1,0 +1,36 @@
+{
+  "name": "create-cline",
+  "version": "0.0.1",
+  "description": "Create your own CLINE fork",
+  "main": "dist/index.js",
+  "bin": {
+    "create-cline": "dist/index.js",
+    "cline": "dist/index.js"
+  },
+  "type": "module",
+  "publisher": "hikae",
+  "author": "hikae",
+  "scripts": {
+    "build": "bun build ./bin/index.ts --outdir ./dist --target node",
+    "start": "bun run dist/index.js",
+    "dev": "bun --watch ./bin/index.ts",
+    "create": "bun ./bin/index.ts",
+    "prepare": "bun run build"
+  },
+  "keywords": [
+    "cline"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "execa": "^8.0.1",
+    "fs-extra": "^11.2.0",
+    "ora": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.10.5",
+    "bun-types": "latest"
+  }
+}
